@@ -15,7 +15,7 @@ abstract class ViewModelModule {
     @Binds
     @IntoMap
     @ViewModelKey(MainViewModel::class)
-    abstract fun bindAddressSelectViewModel(mainViewModel: MainViewModel): ViewModel
+    abstract fun bindMainViewModel(mainViewModel: MainViewModel): ViewModel
 
     @Binds
     abstract fun bindViewModelFactory(factory: DaggerViewModelFactory): ViewModelProvider.Factory
